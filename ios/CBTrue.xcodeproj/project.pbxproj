@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		206CD6C6237F945700F97FE5 /* IOSNativeToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 206CD6C5237F945700F97FE5 /* IOSNativeToast.m */; };
+		9C785BAE2A86FBE17E50ECAD /* Pods_CBTrue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37FC37CEB8A63535C91D8AC6 /* Pods_CBTrue.framework */; };
 		B3E7B58A1CC2AC0600A0062D /* CBTrue.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* CBTrue.m */; };
 /* End PBXBuildFile section */
 
@@ -24,8 +26,13 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libCBTrue.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCBTrue.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		206CD6C4237F945700F97FE5 /* IOSNativeToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSNativeToast.h; sourceTree = "<group>"; };
+		206CD6C5237F945700F97FE5 /* IOSNativeToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSNativeToast.m; sourceTree = "<group>"; };
+		37FC37CEB8A63535C91D8AC6 /* Pods_CBTrue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CBTrue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BF0DCA08A807EC588F876DE /* Pods-CBTrue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CBTrue.debug.xcconfig"; path = "Target Support Files/Pods-CBTrue/Pods-CBTrue.debug.xcconfig"; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* CBTrue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBTrue.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* CBTrue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBTrue.m; sourceTree = "<group>"; };
+		BB81E43FDE677EA6E1A6ADAA /* Pods-CBTrue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CBTrue.release.xcconfig"; path = "Target Support Files/Pods-CBTrue/Pods-CBTrue.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C785BAE2A86FBE17E50ECAD /* Pods_CBTrue.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,10 +58,32 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				206CD6C4237F945700F97FE5 /* IOSNativeToast.h */,
+				206CD6C5237F945700F97FE5 /* IOSNativeToast.m */,
 				B3E7B5881CC2AC0600A0062D /* CBTrue.h */,
 				B3E7B5891CC2AC0600A0062D /* CBTrue.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				8030F77955EEF922A5866AB1 /* Pods */,
+				AD46D0114FC8FF47DFA4AC4C /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		8030F77955EEF922A5866AB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BF0DCA08A807EC588F876DE /* Pods-CBTrue.debug.xcconfig */,
+				BB81E43FDE677EA6E1A6ADAA /* Pods-CBTrue.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AD46D0114FC8FF47DFA4AC4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37FC37CEB8A63535C91D8AC6 /* Pods_CBTrue.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -63,6 +93,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "CBTrue" */;
 			buildPhases = (
+				2F348B0484FB347DC278E835 /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -95,6 +126,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
@@ -107,11 +139,37 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2F348B0484FB347DC278E835 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CBTrue-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				206CD6C6237F945700F97FE5 /* IOSNativeToast.m in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* CBTrue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,22 +272,7 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
-				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = CBTrue;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		58B511F11A9E6C8500147676 /* Release */ = {
-			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BF0DCA08A807EC588F876DE /* Pods-CBTrue.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -241,6 +284,25 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = CBTrue;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		58B511F11A9E6C8500147676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB81E43FDE677EA6E1A6ADAA /* Pods-CBTrue.release.xcconfig */;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = CBTrue;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

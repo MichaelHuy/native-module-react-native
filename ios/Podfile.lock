@@ -1,0 +1,22 @@
+PODS:
+  - Crisp (0.1.30)
+  - React (0.11.0):
+    - React/Core (= 0.11.0)
+  - React/Core (0.11.0)
+
+DEPENDENCIES:
+  - Crisp
+  - React
+
+SPEC REPOS:
+  trunk:
+    - Crisp
+    - React
+
+SPEC CHECKSUMS:
+  Crisp: 9885dbc560baa857109a489e4a292afb1901cf7f
+  React: ab1a2e21deb34965c38328d5ec40cc7d12c6050a
+
+PODFILE CHECKSUM: ec68ba5b9690ff99b0c9015db2ca4e5a74669a12
+
+COCOAPODS: 1.8.4

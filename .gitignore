@@ -40,3 +40,6 @@ local.properties
 buck-out/
 \.buckd/
 *.keystore
+example/node_modules
+example/ios/Pods
+ios/Pods/

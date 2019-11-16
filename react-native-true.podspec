@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   # s.license    = { :type => "MIT", :file => "FILE_LICENSE" }
   s.authors      = { "Your Name" => "yourname@email.com" }
   s.platforms    = { :ios => "9.0", :tvos => "10.0" }
-  s.source       = { :path => "./"}
+  s.source       = { :git => "https://github.com/MichaelHuy/native-module-react-native.git"}
 
   s.source_files = "ios/**/*.{h,m,swift}"
   s.requires_arc = true

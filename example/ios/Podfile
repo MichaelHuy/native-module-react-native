@@ -26,5 +26,5 @@ platform :ios, '10.0'
         pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
         pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
         
-		pod 'react-native-true', :podspec => '../node_modules/react-native-true/react-native-true.podspec'
+		pod 'react-native-true', :path => '../node_modules/react-native-true'
 	end

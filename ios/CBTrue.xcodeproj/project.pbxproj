@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		206CD6C6237F945700F97FE5 /* IOSNativeToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 206CD6C5237F945700F97FE5 /* IOSNativeToast.m */; };
-		9C785BAE2A86FBE17E50ECAD /* Pods_CBTrue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37FC37CEB8A63535C91D8AC6 /* Pods_CBTrue.framework */; };
+		20A6103A23813FD400290627 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A6103923813FD400290627 /* File.swift */; };
+		86B2DA38D3BEADEDDF29A6D3 /* libPods-CBTrue.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7244C05F0A9D852CCD745AF2 /* libPods-CBTrue.a */; };
 		B3E7B58A1CC2AC0600A0062D /* CBTrue.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* CBTrue.m */; };
 /* End PBXBuildFile section */
 
@@ -144,8 +145,10 @@
 		206CD6C4237F945700F97FE5 /* IOSNativeToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSNativeToast.h; sourceTree = "<group>"; };
 		206CD6C5237F945700F97FE5 /* IOSNativeToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSNativeToast.m; sourceTree = "<group>"; };
 		20A0AC122380E0340034861C /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../example/node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		37FC37CEB8A63535C91D8AC6 /* Pods_CBTrue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CBTrue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20A6103823813FD400290627 /* CBTrue-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CBTrue-Bridging-Header.h"; sourceTree = "<group>"; };
+		20A6103923813FD400290627 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		5BF0DCA08A807EC588F876DE /* Pods-CBTrue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CBTrue.debug.xcconfig"; path = "Target Support Files/Pods-CBTrue/Pods-CBTrue.debug.xcconfig"; sourceTree = "<group>"; };
+		7244C05F0A9D852CCD745AF2 /* libPods-CBTrue.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CBTrue.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* CBTrue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBTrue.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* CBTrue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBTrue.m; sourceTree = "<group>"; };
 		BB81E43FDE677EA6E1A6ADAA /* Pods-CBTrue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CBTrue.release.xcconfig"; path = "Target Support Files/Pods-CBTrue/Pods-CBTrue.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,7 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C785BAE2A86FBE17E50ECAD /* Pods_CBTrue.framework in Frameworks */,
+				86B2DA38D3BEADEDDF29A6D3 /* libPods-CBTrue.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +200,7 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				20A6103923813FD400290627 /* File.swift */,
 				206CD6C4237F945700F97FE5 /* IOSNativeToast.h */,
 				206CD6C5237F945700F97FE5 /* IOSNativeToast.m */,
 				B3E7B5881CC2AC0600A0062D /* CBTrue.h */,
@@ -204,6 +208,7 @@
 				134814211AA4EA7D00B7C361 /* Products */,
 				8030F77955EEF922A5866AB1 /* Pods */,
 				AD46D0114FC8FF47DFA4AC4C /* Frameworks */,
+				20A6103823813FD400290627 /* CBTrue-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -220,7 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				20A0AC122380E0340034861C /* React.xcodeproj */,
-				37FC37CEB8A63535C91D8AC6 /* Pods_CBTrue.framework */,
+				7244C05F0A9D852CCD745AF2 /* libPods-CBTrue.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 				TargetAttributes = {
 					58B511DA1A9E6C8500147676 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -430,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				206CD6C6237F945700F97FE5 /* IOSNativeToast.m in Sources */,
+				20A6103A23813FD400290627 /* File.swift in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* CBTrue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,7 +547,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5BF0DCA08A807EC588F876DE /* Pods-CBTrue.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -548,6 +558,8 @@
 					"$(SRCROOT)/../../react-native/React/**",
 					"${PODS_CONFIGURATION_BUILD_DIR}/Crisp/Crisp.framework/Headers",
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -555,6 +567,8 @@
 				);
 				PRODUCT_NAME = CBTrue;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CBTrue/CBTrue-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 			};
@@ -564,7 +578,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB81E43FDE677EA6E1A6ADAA /* Pods-CBTrue.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -572,6 +589,8 @@
 					"$(SRCROOT)/../../react-native/React/**",
 					"${PODS_CONFIGURATION_BUILD_DIR}/Crisp/Crisp.framework/Headers",
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -579,6 +598,7 @@
 				);
 				PRODUCT_NAME = CBTrue;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CBTrue/CBTrue-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 			};
